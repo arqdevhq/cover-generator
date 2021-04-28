@@ -1,6 +1,6 @@
 export const toDataURL = async (url, callback) => {
 	const image = new Image();
-	image.src = `https://cors-anywhere.herokuapp.com/${url}`;
+	image.src = url;
 	image.crossOrigin = 'Anonymous';
 	image.onload = function () {
 		var canvas = document.createElement('CANVAS');
